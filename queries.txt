@@ -1,0 +1,38 @@
+1
+
+SELECT * FROM students
+WHERE students.date_of_birth >= '1990-01-01' AND students.date_of_birth <= '1990-12-31';
+
+2
+
+SELECT * FROM courses
+WHERE courses.cfu > 10;
+
+3
+
+SELECT * FROM students
+WHERE DATEDIFF(CURDATE(), students.date_of_birth) > 10950;
+
+4
+
+SELECT * FROM courses
+WHERE courses.period = 'I semestre' AND courses.year = 1;
+
+5
+
+SELECT * FROM exams
+WHERE exams.date = '2020-06-20' AND exams.hour > '14:00:00';
+
+6
+
+SELECT * FROM degrees
+WHERE degrees.level = 'magistrale';
+
+7
+
+SELECT COUNT(departments.id) FROM departments;
+
+8
+
+SELECT COUNT(teachers.id) FROM teachers
+WHERE teachers.phone IS NULL;
